@@ -1,0 +1,16 @@
+#navbar-container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+    align-items: center;
+}
+
+#nav-links{
+    display: flex;
+}
+
+#header-name{
+    font-weight: 800;
+    color:tomato;
+
+}
