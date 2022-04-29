@@ -5,7 +5,7 @@ const SkillWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Patrick+Hand&display=swap");
 
   .skill-card {
-    border: 5px solid darkorchid;
+    /* border: 5px solid darkorchid; */
     width: 150px;
     height: 180px;
     text-align: center;

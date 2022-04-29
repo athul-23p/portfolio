@@ -3,6 +3,7 @@ import styled from "styled-components";
 import revvImg from "../../assets/images/revv-landing-page.png";
 import naukriImg from "../../assets/images/naukri-landing-page.png";
 import { Col, Row } from "antd";
+import SectionHeader from "../SectionHeader";
 const ProjectSectionWrapper = styled.div``;
 
 function ProjectSection() {
@@ -26,8 +27,10 @@ function ProjectSection() {
   ];
   return (
     <ProjectSectionWrapper>
-      <h2>Projects</h2>
       <div>
+        <Row>
+          <SectionHeader heading="Projects" />
+        </Row>
         <Row
           gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}
           justify="space-evenly"

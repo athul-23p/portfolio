@@ -4,10 +4,18 @@
  */
 import { Col, Row } from "antd";
 import styled from "styled-components";
+import SectionHeader from "../SectionHeader";
 import Skill from "./Skill";
 
 const SkillSectionWrapper = styled.div`
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
+  @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Acme", sans-serif;
+    padding: 5px;
+  }
 `;
 
 function SkillSection() {
@@ -44,8 +52,10 @@ function SkillSection() {
   ];
   return (
     <SkillSectionWrapper>
-      <h2>Skills</h2>
       <div>
+        <Row>
+          <SectionHeader heading="Skills" />
+        </Row>
         <Row>
           <h3>Frontend</h3>
         </Row>
