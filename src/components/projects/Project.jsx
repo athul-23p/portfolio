@@ -1,4 +1,4 @@
-import { Button, Col, Image, Row } from "antd";
+import { Badge, Button, Col, Image, Row } from "antd";
 import { GithubOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
@@ -20,6 +20,9 @@ const ProjectWrapper = styled.div`
     top: -5px;
     left: -5px;
   }
+  .description{
+    min-height: 100px;
+  }
 `;
 
 
@@ -39,9 +42,10 @@ function Project({ project }) {
       <Row justify="center">
         <Col span={20}>
           <h3>{project.title}</h3>
-          <p>{project.description}</p>
+          <p className="description">{project.description}</p>
         </Col>
       </Row>
+      
       <Row justify="center">
         <Col span={6}>
           <Button type="link" href={project.live}>

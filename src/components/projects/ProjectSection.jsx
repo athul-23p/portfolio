@@ -2,10 +2,13 @@ import Project from "./Project";
 import styled from "styled-components";
 import revvImg from "../../assets/images/revv-landing-page.png";
 import naukriImg from "../../assets/images/naukri-landing-page.png";
+import todoImg from "../../assets/images/todo-app.png"
+import portfolioImg from "../../assets/images/portfolio.png";
+
 import { Col, Row } from "antd";
 import SectionHeader from "../SectionHeader";
 const ProjectSectionWrapper = styled.div`
-  height: 60vh;
+  min-height: 60vh;
 `;
 
 function ProjectSection() {
@@ -17,6 +20,7 @@ function ProjectSection() {
       live: "https://naukri-clone-f36472.netlify.app",
       description:
         "Nuakri.com is a very famous site for finding job according to your skills and experiences.",
+      stack: ["HTML", "JavaScript", "CSS"],
     },
     {
       title: "Revv.co.in",
@@ -25,6 +29,25 @@ function ProjectSection() {
       live: "https://revv-clone-project.netlify.app",
       description:
         "Revv Cars is an Indian self-drive mobility startup which lets the user to rent cars from major cities across India. ",
+      stack: ["HTML", "JavaScript", "NodeJS","CSS"],
+    },
+    {
+      title: "Todo App",
+      image: todoImg,
+      github: "https://github.com/athul-23p/react-todos",
+      live: "https://react-todos-ten.vercel.app/",
+      description:
+        " A simple todo app created using React. Allows the user to add,toggle & delete todo",
+      stack: ["React", "JavaScript", "HTML"],
+    },
+    {
+      title: "Portfolio",
+      image: portfolioImg,
+      github: "https://github.com/athul-23p/portfolio",
+      live: "https://athul-p.vercel.app/",
+      description:
+        " A portfolio created using React, Ant Design, Styled-components. The portfolio has sections for home, about, skills,project & contact info",
+      stack: ["React", "JavaScript", "Ant Design"],
     },
   ];
   return (

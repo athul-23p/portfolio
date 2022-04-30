@@ -1,3 +1,5 @@
+import { UpOutlined } from "@ant-design/icons";
+import { BackTop, Button } from "antd";
 import "./App.css";
 import AboutSection from "./components/about/AboutSection";
 import ContactSection from "./components/contact/ContactSection";
@@ -10,12 +12,17 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-        <HomeSection />
+      <HomeSection />
       <div id="content">
         <AboutSection />
         <SkillSection />
         <ProjectSection id="project-section" />
-        <ContactSection  />
+        <ContactSection />
+        <BackTop>
+          <Button shape="round" style={{ backgroundColor: "#2048ce" ,color:"white"}}>
+            <UpOutlined />
+          </Button>
+        </BackTop>
       </div>
     </div>
   );

@@ -3,13 +3,13 @@ import styled from "styled-components";
 import SectionHeader from "../SectionHeader";
 import ContactInfo from "./ContactInfo";
 const ContactSectionWrapper = styled.div`
-   & {
-     margin: 10px;
-     height: 60vh;
+   #contact-section{
+     
+     margin-bottom: 20px;
+    
    }
   .content {
     width: 95%;
-  
     margin: auto;
     border-radius: 7px;
     transition: 0.7s;

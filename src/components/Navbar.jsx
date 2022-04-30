@@ -18,7 +18,7 @@ function NavBar({ refs, handleNav }) {
           <h2 id="header-name"> &lt;Athul /&gt;</h2>
         </div>
 
-        <Anchor affix={false}>
+        <Anchor affix={false} offsetTop={50}>
           <Row>
             <Col>
               <Link href="#home-section" title="Home" />
@@ -33,7 +33,8 @@ function NavBar({ refs, handleNav }) {
               <Link href="#project-section" title="Projects" />
             </Col>
             <Col>
-            <Link href="#contact-section" title="Contact"/></Col>
+              <Link href="#contact-section" title="Contact" />
+            </Col>
           </Row>
         </Anchor>
       </div>

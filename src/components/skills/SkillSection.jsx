@@ -31,6 +31,10 @@ function SkillSection() {
       name: "React",
     },
     { icon: "https://img.icons8.com/color/48/000000/redux.png", name: "Redux" },
+    {
+      icon: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+      name:"Ant Design"
+    },
   ];
 
   const backend = [
@@ -59,7 +63,7 @@ function SkillSection() {
           </Row>
 
           <Row
-            // gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}
+            gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}
             justify="space-evenly"
           >
             {frontend.map((skill) => (
@@ -71,7 +75,7 @@ function SkillSection() {
           <Row>
             <h3>Backend</h3>
           </Row>
-          <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="space-evenly">
+          <Row gutter={[16,{ xs: 8, sm: 16, md: 24, lg: 32 }]} justify="space-evenly">
             {backend.map((skill) => (
               <Skill skill={skill} />
             ))}
