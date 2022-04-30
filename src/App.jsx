@@ -12,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <HomeSection />
       <div id="content">
+      <HomeSection />
         <AboutSection />
         <SkillSection />
         <ProjectSection id="project-section" />

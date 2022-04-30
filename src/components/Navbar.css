@@ -28,3 +28,17 @@
     /* flex-direction: row; */
     border: 1px solid red;
 }
+
+.dropdown-menu{
+    display: none;
+}
+
+
+@media (max-width: 565.98px) { 
+    .anchor-links{
+        display: none;
+    }
+    .dropdown-menu{
+        display: block;
+    }
+ }

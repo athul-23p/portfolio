@@ -18,6 +18,7 @@ const Wrapper = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+    margin-top: 50px;
   }
 `;
 
