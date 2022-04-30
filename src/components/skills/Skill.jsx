@@ -12,7 +12,7 @@ const SkillWrapper = styled.div`
     box-sizing: border-box;
     padding-top: 30px;
     border-radius: 12px;
-    transition: 1s;
+    transition: 0.7s;
     p {
       margin-top: 5px;
       font-weight: 500;

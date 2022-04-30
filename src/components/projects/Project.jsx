@@ -8,7 +8,7 @@ const ProjectWrapper = styled.div`
   box-sizing: border-box;
   /* border: 4px solid darkorchid; */
   border-radius: 12px;
-  transition: 1s;
+  transition: 0.7s;
   padding: 2px;
 
   img {

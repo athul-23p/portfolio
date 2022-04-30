@@ -10,11 +10,11 @@ const ContactSectionWrapper = styled.div`
     width: 95%;
     margin: auto;
     border-radius: 7px;
-    transition: 1s;
+    transition: 0.7s;
   }
   
   .content:hover{
-    box-shadow: 4px 4px 12px 1px darkorchid;
+    box-shadow: 5px 5px 18px 1px darkorchid;
     position: relative;
     top:-5px;
     left: -5px;
@@ -48,7 +48,7 @@ function ContactSection() {
       <div className="content">
         <Row>
           <Col span={12} className="left">
-            <h3>Get in touch with me</h3>
+            <h3>Get in touch</h3>
           </Col>
           <Col span={12} className="right">
             <ContactInfo />
