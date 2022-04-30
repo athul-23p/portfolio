@@ -5,9 +5,11 @@ import ContactInfo from "./ContactInfo";
 const ContactSectionWrapper = styled.div`
    & {
      margin: 10px;
+     height: 60vh;
    }
   .content {
     width: 95%;
+  
     margin: auto;
     border-radius: 7px;
     transition: 0.7s;
@@ -42,18 +44,21 @@ const ContactSectionWrapper = styled.div`
 function ContactSection() {
   return (
     <ContactSectionWrapper>
-      <Row>
-        <SectionHeader heading="Contact" />
-      </Row>
-      <div className="content">
+      <div id='contact-section'>
         <Row>
-          <Col span={12} className="left">
-            <h3>Get in touch</h3>
-          </Col>
-          <Col span={12} className="right">
-            <ContactInfo />
-          </Col>
+          <SectionHeader heading="Contact" />
         </Row>
+        <div className="content">
+          <Row>
+            <Col span={12} className="left">
+              <h3>Get in touch</h3>
+            </Col>
+            <Col span={12} className="right">
+              <ContactInfo />
+            </Col>
+          </Row>
+        </div>
+
       </div>
     </ContactSectionWrapper>
   );

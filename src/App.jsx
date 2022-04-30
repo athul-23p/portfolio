@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-        <HomeSection id="home-section" />
+        <HomeSection />
       <div id="content">
-        <AboutSection id="about-section" />
-        <SkillSection id="skill-section" />
+        <AboutSection />
+        <SkillSection />
         <ProjectSection id="project-section" />
-        <ContactSection id="contact-section" />
+        <ContactSection  />
       </div>
     </div>
   );

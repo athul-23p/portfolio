@@ -1,8 +1,9 @@
 import { Col, Menu, Row } from "antd";
 import { Header } from "antd/lib/layout/layout";
 import "./Navbar.css";
-
-function NavBar({refs,handleNav}) {
+import { Anchor } from "antd";
+const { Link } = Anchor;
+function NavBar({ refs, handleNav }) {
   return (
     <Header
       style={{
@@ -12,28 +13,30 @@ function NavBar({refs,handleNav}) {
         zIndex: "10",
       }}
     >
-      <Row>
-        <Col span={3}>
+      <div id="header">
+        <div>
           <h2 id="header-name"> &lt;Athul /&gt;</h2>
-        </Col>
+        </div>
 
-        <Col offset={5} span={2}>
-          <h3>Home</h3>
-          {/* <a href="#home-section">Home</a> */}
-        </Col>
-        <Col span={2}>
-          <h3>About</h3>
-        </Col>
-        <Col span={2}>
-          <h3>Skills</h3>
-        </Col>
-        <Col span={3}>
-          <h3>Projects</h3>
-        </Col>
-        <Col span={2}>
-          <h3>Contact</h3>
-        </Col>
-      </Row>
+        <Anchor affix={false}>
+          <Row>
+            <Col>
+              <Link href="#home-section" title="Home" />
+            </Col>
+            <Col>
+              <Link href="#about-section" title="About" />
+            </Col>
+            <Col>
+              <Link href="#skill-section" title="Skills" />
+            </Col>
+            <Col>
+              <Link href="#project-section" title="Projects" />
+            </Col>
+            <Col>
+            <Link href="#contact-section" title="Contact"/></Col>
+          </Row>
+        </Anchor>
+      </div>
     </Header>
   );
 }

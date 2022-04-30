@@ -11,6 +11,20 @@
 
 #header-name{
     font-weight: 800;
+    min-width: 90px;
     color:rgb(71, 83, 255);
 
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    width: 60%;
+    /* flex-direction: row; */
+    border: 1px solid red;
 }

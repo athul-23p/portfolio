@@ -1,7 +1,3 @@
-/**
- *
- *
- */
 import { Col, Row } from "antd";
 import styled from "styled-components";
 import SectionHeader from "../SectionHeader";
@@ -9,6 +5,7 @@ import Skill from "./Skill";
 
 const SkillSectionWrapper = styled.div`
   /* border: 2px solid purple; */
+ 
   @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
   h3 {
     font-family: "Acme", sans-serif;
@@ -52,32 +49,34 @@ function SkillSection() {
   ];
   return (
     <SkillSectionWrapper>
-      <div>
-        <Row>
-          <SectionHeader heading="Skills" />
-        </Row>
-        <Row>
-          <h3>Frontend</h3>
-        </Row>
+      <div id='skill-section'>
+        <div>
+          <Row>
+            <SectionHeader heading="Skills" />
+          </Row>
+          <Row>
+            <h3>Frontend</h3>
+          </Row>
 
-        <Row
-          gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}
-          justify="space-evenly"
-        >
-          {frontend.map((skill) => (
-            <Skill skill={skill} />
-          ))}
-        </Row>
-      </div>
-      <div>
-        <Row>
-          <h3>Backend</h3>
-        </Row>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="space-evenly">
-          {backend.map((skill) => (
-            <Skill skill={skill} />
-          ))}
-        </Row>
+          <Row
+            // gutter={[16, { xs: 8, sm: 16, md: 24, lg: 32 }]}
+            justify="space-evenly"
+          >
+            {frontend.map((skill) => (
+              <Skill skill={skill} />
+            ))}
+          </Row>
+        </div>
+        <div>
+          <Row>
+            <h3>Backend</h3>
+          </Row>
+          <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="space-evenly">
+            {backend.map((skill) => (
+              <Skill skill={skill} />
+            ))}
+          </Row>
+        </div>
       </div>
     </SkillSectionWrapper>
   );

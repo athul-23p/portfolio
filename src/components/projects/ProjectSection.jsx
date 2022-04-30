@@ -4,7 +4,9 @@ import revvImg from "../../assets/images/revv-landing-page.png";
 import naukriImg from "../../assets/images/naukri-landing-page.png";
 import { Col, Row } from "antd";
 import SectionHeader from "../SectionHeader";
-const ProjectSectionWrapper = styled.div``;
+const ProjectSectionWrapper = styled.div`
+  height: 60vh;
+`;
 
 function ProjectSection() {
   const projects = [
@@ -27,7 +29,7 @@ function ProjectSection() {
   ];
   return (
     <ProjectSectionWrapper>
-      <div>
+      <div id="project-section">
         <Row>
           <SectionHeader heading="Projects" />
         </Row>
