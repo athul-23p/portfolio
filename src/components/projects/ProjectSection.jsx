@@ -22,7 +22,7 @@ function ProjectSection() {
       github: "https://github.com/satyadav123/revvgroup-frontend",
       live: "https://revv-clone-project.netlify.app",
       description:
-        "Revv Cars is an Indian self-drive mobility startup. Car subscription from Revv provides the flexibility of having a car anytime you want, as well as the assurance of a sanitized and virus-free vehicle for your own self-drive. ",
+        "Revv Cars is an Indian self-drive mobility startup which lets the user to rent cars from major cities across India. ",
     },
   ];
   return (

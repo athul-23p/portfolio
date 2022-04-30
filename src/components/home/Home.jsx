@@ -1,4 +1,5 @@
-import { Col, Row } from "antd";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
+import { Button, Col, Row } from "antd";
 import styled from "styled-components";
 import profile from "../../assets/images/profile.png";
 const HomeWrapper = styled.div`
@@ -25,6 +26,18 @@ const HomeWrapper = styled.div`
     border-radius: 50%;
     max-width: 200px;
   }
+  .resume-btn-div{
+    display: flex;
+    justify-content: center;
+  }
+  .resume-btn{
+    background-color: #2048ce;
+    color:white;
+  }
+
+  .resume-btn:hover{
+    background-color: #4465d1;
+  }
 
   @media (max-width: 767.98px) {
     flex-direction: column-reverse;
@@ -43,15 +56,31 @@ const HomeWrapper = styled.div`
 function Home() {
   return (
     <HomeWrapper>
-      
-        <div>
-          <h1>Hi, I'm Athul P</h1>
-          <p>A Fullstack Web Developer</p>
+      <div>
+        <h1>Hi, I'm Athul P</h1>
+        <p>A Fullstack Web Developer</p>
+        <div className="resume-btn-div">
+          <Button
+            type="link"
+            href="https://drive.google.com/file/d/1tUf421RBtkoz-qB0-l5BSnwg9CTUK32U/view?usp=sharing"
+            className="resume-btn"
+          >
+            Resume
+          </Button>
+          <Button type="link" href="https://github.com/athul-23p">
+            <GithubOutlined />
+            <span>Github</span>
+          </Button>
+          <Button type="link" href="https://www.linkedin.com/in/athul-ponthen/">
+            <LinkedinOutlined />
+            <span>Linkedin</span>
+          </Button>
         </div>
-        <div id='pic-container'>
-          <img id="profile-pic" src={profile} alt="" />
-        </div>
-      
+      </div>
+      <div id="pic-container">
+        <img id="profile-pic" src={profile} alt="" />
+      </div>
+      <div></div>
     </HomeWrapper>
   );
 }

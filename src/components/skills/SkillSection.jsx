@@ -11,9 +11,9 @@ const SkillSectionWrapper = styled.div`
   /* border: 2px solid purple; */
   @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
   h3 {
+    font-family: "Acme", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    font-family: "Acme", sans-serif;
     padding: 5px;
   }
 `;
