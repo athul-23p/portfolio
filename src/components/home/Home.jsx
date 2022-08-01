@@ -3,8 +3,8 @@ import { Button, Col, Row } from "antd";
 import styled from "styled-components";
 import profile from "../../assets/images/profile.png";
 const HomeWrapper = styled.div`
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1650793039336-808955e86912?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background: linear-gradient(rgba(12, 81, 109, 0.774), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1658696971350-cd59d6b18f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,16 +26,16 @@ const HomeWrapper = styled.div`
     border-radius: 50%;
     max-width: 200px;
   }
-  .resume-btn-div{
+  .resume-btn-div {
     display: flex;
     justify-content: center;
   }
-  .resume-btn{
+  .resume-btn {
     background-color: #2048ce;
-    color:white;
+    color: white;
   }
 
-  .resume-btn:hover{
+  .resume-btn:hover {
     background-color: #4465d1;
   }
 

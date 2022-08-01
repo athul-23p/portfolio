@@ -48,12 +48,12 @@ function Project({ project }) {
       
       <Row justify="center">
         <Col span={6}>
-          <Button type="link" href={project.live}>
+          <Button type="link" target={'_blank'} href={project.live}>
             Live Demo
           </Button>
         </Col>
         <Col span={3} offset={2}>
-          <Button type="link" href={project.github}>
+          <Button type="link" target={'_blank'} href={project.github}>
             <GithubOutlined />
           </Button>
         </Col>

@@ -4,6 +4,7 @@ import revvImg from "../../assets/images/revv-landing-page.png";
 import naukriImg from "../../assets/images/naukri-landing-page.png";
 import todoImg from "../../assets/images/todo-app.png"
 import portfolioImg from "../../assets/images/portfolio.png";
+import bathandbodyworksImg from "../../assets/images/bath-and-body-works.png"
 
 import { Col, Row } from "antd";
 import SectionHeader from "../SectionHeader";
@@ -13,6 +14,15 @@ const ProjectSectionWrapper = styled.div`
 
 function ProjectSection() {
   const projects = [
+    {
+      title: "Bath and Body Works",
+      image: bathandbodyworksImg,
+      github: "https://github.com/athul-23p/bath_and_body_works",
+      live: "https://bathandbodyworksc3.netlify.app/",
+      description:
+        "Bath and Body Works is an american company which specializes in selling products such as soaps, lotions , candles etc.",
+      stack: ["React", "JavaScript", "Chakra-UI", "Express", "MongoDB"],
+    },
     {
       title: "Naukri.com",
       image: naukriImg,
@@ -29,7 +39,7 @@ function ProjectSection() {
       live: "https://revv-clone-project.netlify.app",
       description:
         "Revv Cars is an Indian self-drive mobility startup which lets the user to rent cars from major cities across India. ",
-      stack: ["HTML", "JavaScript", "NodeJS","CSS"],
+      stack: ["HTML", "JavaScript", "NodeJS", "CSS"],
     },
     {
       title: "Todo App",
