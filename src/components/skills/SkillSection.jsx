@@ -33,7 +33,11 @@ function SkillSection() {
     { icon: "https://img.icons8.com/color/48/000000/redux.png", name: "Redux" },
     {
       icon: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
-      name:"Ant Design"
+      name: "Ant Design",
+    },
+    {
+      icon: "https://img.icons8.com/color/256/react-native.png",
+      name: "React Native",
     },
   ];
 

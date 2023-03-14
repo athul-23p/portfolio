@@ -62,7 +62,8 @@ function Home() {
         <div className="resume-btn-div">
           <Button
             type="link"
-            href="https://drive.google.com/file/d/1tUf421RBtkoz-qB0-l5BSnwg9CTUK32U/view?usp=sharing"
+            href="https://drive.google.com/file/d/1RQyKzlBeLq2VCeSWYSDT-vOFBziFQ9Hm/view?usp=share_link"
+            target={'_blank'}
             className="resume-btn"
           >
             Resume

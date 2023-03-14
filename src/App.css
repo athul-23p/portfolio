@@ -1,12 +1,11 @@
-@import 'antd/dist/antd.css';
+@import "antd/dist/antd.css";
 
-#content{
-    margin-bottom: 20px;
+#content {
+  margin-bottom: 20px;
 }
-@media (min-width: 991.98px) { 
-    #content{
-        width: 70%;
-        margin: auto;
-    }
-
- }
+@media (min-width: 991.98px) {
+  #content {
+    width: 70%;
+    margin: auto;
+  }
+}

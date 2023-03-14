@@ -3,24 +3,21 @@ import styled from "styled-components";
 import SectionHeader from "../SectionHeader";
 import ContactInfo from "./ContactInfo";
 const ContactSectionWrapper = styled.div`
-   #contact-section{
-     
-     margin-bottom: 20px;
-    
-   }
+  #contact-section {
+    padding-bottom: 50px;
+  }
   .content {
     width: 95%;
     margin: auto;
     border-radius: 7px;
     transition: 0.7s;
   }
-  
-  .content:hover{
+
+  .content:hover {
     box-shadow: 5px 5px 18px 1px darkorchid;
     position: relative;
-    top:-5px;
+    top: -5px;
     left: -5px;
-
   }
 
   .left,
@@ -33,7 +30,6 @@ const ContactSectionWrapper = styled.div`
     align-items: center;
   }
   .left {
-    
     background: rgb(99, 90, 185);
     h3 {
       color: white;
@@ -44,7 +40,7 @@ const ContactSectionWrapper = styled.div`
 function ContactSection() {
   return (
     <ContactSectionWrapper>
-      <div id='contact-section'>
+      <div id="contact-section">
         <Row>
           <SectionHeader heading="Contact" />
         </Row>
@@ -58,7 +54,6 @@ function ContactSection() {
             </Col>
           </Row>
         </div>
-
       </div>
     </ContactSectionWrapper>
   );
